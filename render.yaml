@@ -3,6 +3,7 @@ services:
     name: hemotrack-api
     env: node
     plan: free
+    rootDir: hemotrack-backend
     buildCommand: npm install
     startCommand: npm start
     envVars:

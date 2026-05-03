@@ -56,7 +56,7 @@ export default function PatientDashboard() {
               <CardTitle>My Recent Blood Requests</CardTitle>
               <p className="text-xs text-muted-foreground mt-1">Showing last 5 requests</p>
             </div>
-            <Badge variant="outline" className="bg-primary/5 border-primary/20 text-primary">Live Updates</Badge>
+            <Badge className="bg-primary/5 border-primary/20 text-primary">Live Updates</Badge>
           </CardHeader>
           <CardContent>
             {myRequests.length === 0 ? (

@@ -77,8 +77,8 @@ export const initialBloodRequests: BloodRequest[] = [
 ];
 
 export const initialIssueRecords: IssueRecord[] = [
-  { issue_id: 1, unit_id: 1, hospital_id: 21, issue_date: "2025-08-10", admin_id: 1 },
-  { issue_id: 2, unit_id: 2, hospital_id: 1,  issue_date: "2025-08-11", admin_id: 1 },
+  { issue_id: 1, unit_id: 1, hospital_id: 21, issue_date: "2025-08-10", handled_by: 1 },
+  { issue_id: 2, unit_id: 2, hospital_id: 1,  issue_date: "2025-08-11", handled_by: 1 },
 ];
 
 export const initialAuditLogs: AuditLog[] = [

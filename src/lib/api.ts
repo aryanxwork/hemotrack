@@ -8,7 +8,7 @@ class ApiError extends Error {
   }
 }
 
-const BASE_URL = import.meta.env.VITE_API_URL || "/api";
+const BASE_URL = (import.meta as any).env?.VITE_API_URL || "/api";
 
 async function fetchApi(endpoint: string, options: RequestInit = {}) {
   const token = localStorage.getItem("hemotrack_token");
@@ -19,7 +19,7 @@ async function fetchApi(endpoint: string, options: RequestInit = {}) {
   };
 
   if (token) {
-    headers["Authorization"] = `Bearer ${token}`;
+    (headers as Record<string, string>)["Authorization"] = `Bearer ${token}`;
   }
 
   const response = await fetch(`${BASE_URL}${endpoint}`, {

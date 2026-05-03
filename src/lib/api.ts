@@ -9,6 +9,7 @@ class ApiError extends Error {
 }
 
 const BASE_URL = import.meta.env.VITE_API_URL || "/api";
+console.log("HemoTrack API Base URL:", BASE_URL);
 
 async function fetchApi(endpoint: string, options: RequestInit = {}) {
   const token = localStorage.getItem("hemotrack_token");
